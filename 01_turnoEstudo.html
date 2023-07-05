@@ -12,11 +12,24 @@
     */
 
     //ENTRADA
-    
+    const turno = prompt(`qual turno vc estuda`);
+   
     
     //PROCESSAMENTO
-
-    
+    let mensagemFinal = ""
+    switch (turno){
+        case "m":
+           document.write("bom dia");
+        break;
+        case "v":
+            document.write("boa tarde")
+            break;
+            case "n":
+                document.write("boa noite")
+                break;
+    }
     //SAÍDA
+    document.write(mensagemFinal);
+
 
 </script>
