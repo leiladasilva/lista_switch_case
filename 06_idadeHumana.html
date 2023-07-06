@@ -8,11 +8,28 @@
     // - cães grandes: fator 7.
 
     // ENTRADA
-
+    const caes = Number(prompt(`quantos anos tem seu cachorro`))
+    const porte = prompt(`qual o porte do seu cachorro`)
+let pequeno = caes * 5
+let medio = caes * 6
+let grande = caes * 7
     
     // PROCESSAMENTO
 
     
     // SAÍDA
-
+    let mensagemFinal = ""
+    switch (porte) {
+        case "pequeno":
+            mensagemFinal = `seu cachorro tem ${pequeno} anos humanos`
+            break;
+    
+        case "medio":
+            mensagemFinal = `seu cachorro tem ${medio} anos humanos`
+            break;
+            case "grande":
+                mensagemFinal = `seu cachorro tem ${grande} anos humanos`
+                break;
+    }
+document.write(mensagemFinal)
     </script>
