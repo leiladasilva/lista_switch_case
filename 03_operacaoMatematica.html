@@ -8,11 +8,62 @@
     */
 
     //ENTRADA
+    const numero = Number (prompt(`informe um numero`))
+    const numero2 = Number (prompt(`informe outro numero`))
+const operação = (prompt(`informe qual operaçao deseja realizar`))
 
-
+let operação1 = numero - numero2
+let operação2 = numero2 + numero
+let operação3 = numero * numero2
+let operação4 = numero / numero2
     //PROCESSAMENTO
-
-    
+    let mensagemFinal = ""
+    switch (operação) {
+        case "-":
+            mensagemFinal = operação1
+            
+            break;
+            case "+":
+                mensagemFinal = operação2
+                break;
+                case "*":
+                    mensagemFinal = operação3
+                    break;
+                    case "/":
+    mensagemFinal= operação4
+    break;
+    }
+  
     //SAÍDA
+document.write(mensagemFinal)
+switch (mensagemFinal % 2) {
+    case 0:
+        mensagemFinal1= " numero  é par"
+        break;
 
+    default:
+        mensagemFinal1 = " numero é impar"
+        break;
+}
+document.write(mensagemFinal1)
+switch (mensagemFinal) {
+    case -0:
+        mensagemFinal2 = " numero é negativo"
+        break;
+
+    default:
+        mensagemFinal2 = " numero é positivo"
+        break;
+}
+document.write(mensagemFinal2)
+switch (mensagemFinal) {
+    case 1,0:
+        mensagemFinal3 = " o numero é decimal"
+        break;
+
+    default:
+        mensagemFinal3 = "o numero é inteiro"
+        break;
+}
+document.write(mensagemFinal3).replace(",",".")
 </script>

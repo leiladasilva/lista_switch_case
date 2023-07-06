@@ -5,6 +5,15 @@
     */
 
     //ENTRADA
-    
-
+    const numero = Number(prompt(`digite um numero`))
+    let mensagemFinal = "";
+    switch (numero % 2) {
+        case 0:
+            mensagemFinal = `o numero é par`;
+            break;
+        default:
+            mensagemFinal = `o numero é ímpar`;
+            break;
+    }
+    document.write(mensagemFinal)
 </script>
